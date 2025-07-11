@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+  <link rel="stylesheet" href="https://use.typekit.net/hks6dgm.css">
+  <title>Epidermitecture</title>
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      overflow: auto;
+      background: transparent;
+      color: white;
+      font-family: "pressio", sans-serif;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 20px 20px;
+    }
+
+    .title {
+      position: fixed;
+      top: 500px;
+      right: 120px;
+      transform: rotate(90deg) translateY(-100%);
+      transform-origin: top right;
+      color: white;
+      margin: 0;
+      font-size: 60px;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    .content-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+    .illustration2 {
+      display: block;
+      max-width: 1200px;
+      height: auto;
+      margin-top: 60px;
+      margin-bottom: 80px;
+      margin-left: -40px;
+      margin-right: auto;
+    }
+
+    .instructions {
+      color: white;
+      max-width: 600px;
+      flex: 1;
+      margin-top: 0px;
+      margin-left: -40px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+ .video-wrapper {
+  width: fit-content;
+  margin-left: auto;
+  margin-top: -300px; /* or whatever works for vertical alignment */
+  padding-right: 0px; /* Add this to counter the image’s -40px left shift */
+}
+
+.video-wrapper video {
+  width: 500px; /* or match the actual video width */
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+    .final-image {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  margin: 80px auto 30px auto;
+  border: 2px solid white;
+}
+
+
+    .bottom-text {
+      color: white;
+      max-width: 700px;
+      margin: 0 auto 100px auto;
+      padding: 20px;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      color: white;
+      margin: 0 0 15px 0;
+      font-size: 50px;
+    }
+
+    p {
+      color: white;
+      margin: 0 0 15px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      display: none;
+    }
+
+    .top-bar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      background: white;
+      border: 2px solid black;
+      height: 30px;
+      align-items: center;
+      padding: 0;
+      z-index: 200;
+    }
+
+    .top-bar a {
+      color: black;
+      text-decoration: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      background: white;
+    }
+
+    .top-bar a:hover {
+      background: rgb(201, 8, 8);
+      color: white;
+      border-color: rgb(201, 8, 8);
+    }
+
+    .top-bar a:first-child {
+      border-left: none;
+    }
+
+    .top-bar a:last-child {
+      border-right: none;
+    }
+
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <a href="nimo'sportfolio.html#intro">Intro</a>
+  <a href="nimo'sportfolio.html#works">Works</a>
+  <a href="nimo'sportfolio.html#about">About</a>
+  <a href="nimo'sportfolio.html#contact">Contact</a>
+</div>
+
+
+  <div class="wrapper">
+    <h1 class="title">Epidermitecture</h1>
+
+    <div class="image-wrapper">
+      <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/epidermitecture_installation%20image_2.jpeg?v=1750686003317" class="illustration2" alt="Editor illustration" />
+    </div>
+
+    <div class="instructions">
+      <p>We all have seen biopatina, yet have you ever noticed it?</p>
+      <p>Many people may view them as insignificant stains on houses and other surfaces. However, the biopatina is incredibly valuable and exceptional. Biopatina is the formation of a unique complex symbiotic relationship of multiple organisms on human made surfaces. The biopatina is not only beneficial towards each other, but also towards the surface it lives on, helping in preserving it. In this work, we took on a different perspective by switching to a non human point of view. Looking from microscopic to systematic, we talked about coexistence amongst seemingly unrelated entities and how they come together to reimagine the surrounding environment.</p>
+   <p>
+     In collaboration with Artùr, Priscilla, Layla, Julius and Demi
+      </p>
+    </div>
+
+    <div class="video-wrapper">
+      <video width="500" controls>
+        <source src="https://cdn.glitch.me/46b5f655-455f-47c6-9d48-da19107a3dde/epidermitecture_%20Installation%20video.mp4?v=1750687193104" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="image-wrapper">
+    <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/experimentation%20four.png?v=1750766404448" class="final-image" alt="Final illustration" />
+  </div>
+
+  <div class="bottom-text">
+    <p>please enter - walk ahead</p>
+    <p>unravel your perception</p>
+    <p>venture into different perspectives</p>
+    <p>-</p>
+    <p>for centuries we have peacefully lived along the Maas</p>
+    <p>unseen, unheard, unregarded</p>
+    <p>along our paths, along your paths</p>
+    <p>we came together</p>
+    <p>to fathom reciprocation</p>
+    <p>despite seeming unrelated</p>
+    <p>challenging the assumptions of association</p>
+    <p>-</p>
+    <p>unique when sole and unique when united</p>
+    <p>who takes gives, who gives takes</p>
+    <p>we are a complex collective conjunction</p>
+    <p>each one of us interconnected</p>
+    <p>each one of us interdependent</p>
+    <p>-</p>
+    <p>eclipsing exclusivity</p>
+    <p>we encompass our surrounding</p>
+    <p>caring, cultivating, cherishing</p>
+    <p>where we reside</p>
+    <p>connecting, concerting, collaborating</p>
+    <p>with all entities</p>
+    <p>-</p>
+    <p>mark that this is what occurs</p>
+    <p>marvel at what could be</p>
+    <p>meditate that 3063 can be just this</p>
+  </div>
+
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <script>
+    const hydra = new Hydra({ detectAudio: false, canvas: document.createElement('canvas') });
+    document.body.appendChild(hydra.canvas);
+
+    voronoi(350, 0.15)
+      .modulateScale(osc(8).rotate(Math.sin(time)), 0.5)
+      .thresh(0.8)
+      .modulateRotate(osc(7), 0.4)
+      .thresh(0.7)
+      .diff(src(o0).scale(1.8))
+      .modulateScale(osc(2).modulateRotate(o0, 0.74))
+      .diff(src(o0).rotate([-.012, .01, -.002, 0]).scrollY(0, [-1/199800, 0].fast(0.7)))
+      .brightness([-.02, -.17].smooth().fast(0.5))
+      .out();
+  </script>
+
+</body>
+</html>

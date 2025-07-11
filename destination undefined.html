@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+  <link rel="stylesheet" href="https://use.typekit.net/hks6dgm.css">
+  <title>Destination Undefined</title>
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      overflow: auto;
+      background: transparent;
+      color: white;
+      font-family: "pressio", sans-serif;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 20px 20px;
+    }
+
+     .title {
+      position: fixed;
+      top: 665px;
+      right: 120px;
+      transform: rotate(90deg) translateY(-100%);
+      transform-origin: top right;
+      color: white;
+      margin: 0;
+      font-size: 60px;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    .content-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+    
+ /* Make sure the wrapper can accommodate the image */
+.image-wrapper {
+  width: 100%; /* Ensure it takes up the full width */
+  position: relative; /* Makes sure positioning inside the wrapper works */
+  max-width: 1200px; /* Constrains the max width */
+}
+
+.image-wrapper img {
+  position: relative; /* Allows relative positioning within the wrapper */
+  width: 1200px; /* Force the image to 1200px wide */
+  height: auto; /* Maintain aspect ratio */
+  top: 70px; /* Moves the image downward */
+  left: -10px; /* Moves the image to the left */
+  margin-bottom: 80px; /* Adjust this as needed */
+}
+
+
+    .illustration2 {
+  display: block;
+  max-width: 1200px;
+  height: auto;
+  margin-top: 300px; /* Change this value */
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: 220px;
+}
+
+
+    .instructions {
+      color: white;
+      max-width: 600px;
+      flex: 1;
+      margin-top: 150px;
+      margin-left: -40px;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .video-wrapper {
+      max-width: 600px;
+      margin-top: -460px;
+      margin-left: 650px;
+      margin-right: 50px;
+    }
+
+    .final-image {
+      display: block;
+      max-width: 1200px;
+      width: 100%;
+      height: auto;
+      margin: 80px 20px 180px 150px;
+    }
+
+    .bottom-text {
+      color: white;
+      max-width: 700px;
+      margin: 180px auto 100px auto;
+      padding: 20px;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      color: white;
+      margin: 0 0 15px 0;
+      font-size: 50px;
+    }
+
+    p {
+      color: white;
+      margin: 0 0 15px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      display: none;
+    }
+
+    .top-bar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      background: white;
+      border: 2px solid black;
+      height: 30px;
+      align-items: center;
+      padding: 0;
+      z-index: 200;
+    }
+
+    .top-bar a {
+      color: black;
+      text-decoration: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      background: white;
+    }
+
+    .top-bar a:hover {
+      background: rgb(201, 8, 8);
+      color: white;
+      border-color: rgb(201, 8, 8);
+    }
+
+    .top-bar a:first-child {
+      border-left: none;
+    }
+
+    .top-bar a:last-child {
+      border-right: none;
+    }
+
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <a href="nimo'sportfolio.html#intro">Intro</a>
+  <a href="nimo'sportfolio.html#works">Works</a>
+  <a href="nimo'sportfolio.html#about">About</a>
+  <a href="nimo'sportfolio.html#contact">Contact</a>
+</div>
+
+
+  <div class="wrapper">
+    <h1 class="title">Destination Undefined</h1>
+
+    <div class="image-wrapper">
+      <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/bench_carl_screenshot.png?v=1750758081419" alt="Editor illustration" />
+    </div>
+
+    <div class="instructions">
+      <p>As foreigners to the Netherlands our perspective on the public spaces in Rotterdam are contending. From this viewpoint these spaces become more than in between, they become a new home.</p>
+<p>We noticed, researched and discussed our findings in regards to the hostility of these public spaces, that seemed to be characterized and visualized by hostile architecture. While reflecting on this, we came to the conclusion that this uninviting environment was a reflection of the society itself within the city of Rotterdam.</p>
+<p>We found that this social set up lacked the vital presence of empathy towards the most vulnerable people within our society: the homeless.</p>
+<p>This is where we chose to outline our research topic. By looking at what hardships are born when home is defined as a liminal space and not a destination as experienced by the homeless. As well as our individual and societal role in this.</p>
+<p> In collaboration with Josie Loubser </p>
+    </div>
+
+    <div class="video-wrapper">
+      <video width="500" controls>
+        <source src="https://cdn.glitch.me/46b5f655-455f-47c6-9d48-da19107a3dde/Destination_Undefined.mp4?v=1751208691432" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+
+  <div class="image-wrapper">
+    <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/bed_screenshot.png?v=1750766953654" class="final-image" alt="Final illustration" />
+  </div>
+
+  <div class="bottom-text">
+    <p>You do not belong here.</p>
+<p>the part of us we wish to ignore</p>
+<p>we have become hostile by nature.</p>
+<p>that which we cannot accept as our own we wish to discard</p>
+<p>we do not see you,</p>
+<p>we do not want to.</p>
+<p>closed our eyes, closed our hearts.</p>
+<p>hostility festers within us</p>
+<p>home</p>
+<p>thoughtlessly traded with belonging</p>
+<p>no destination, no recognition</p>
+<p>a life gone unnoticed,</p>
+<p>a voice blurred</p>
+<p>unheard.</p>
+<p>shattered shards of finality</p>
+<p>scattered at your feet</p>
+<p>no entrance or exit to the eternal expanse of existence.</p>
+<p>lodged into a crevice of abandonment,</p>
+<p>forced into a magnitude of suffocation.</p>
+<p>a latitude of confinement.</p>
+<p>destination turned liminal.</p>
+<p>dismissed, disregarded, dishonest</p>
+<p>our hearts closed off,</p>
+<p>closed off from fear.</p>
+<p>fear you will infect us,</p>
+<p>infect us with helplessness and shame.</p>
+<p>the more we see</p>
+<p>the more we deny.</p>
+<p>deny, defend, destroy.</p>
+<p>we destroy you, so not to destroy ourselves,</p>
+<p>destroyed from impending guilt.</p>
+<p>watch with eyes closed</p>
+<p>so we do not endure the suffering.</p>
+<p>the recoil of our own creation.</p>
+<p>left to bear our burdens.</p>
+<p>alone.</p>
+  </div>
+
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <script>
+    const hydra = new Hydra({ detectAudio: false, canvas: document.createElement('canvas') });
+    document.body.appendChild(hydra.canvas);
+
+    voronoi(350, 0.15)
+      .modulateScale(osc(8).rotate(Math.sin(time)), 0.5)
+      .thresh(0.8)
+      .modulateRotate(osc(7), 0.4)
+      .thresh(0.7)
+      .diff(src(o0).scale(1.8))
+      .modulateScale(osc(2).modulateRotate(o0, 0.74))
+      .diff(src(o0).rotate([-.012, .01, -.002, 0]).scrollY(0, [-1/199800, 0].fast(0.7)))
+      .brightness([-.02, -.17].smooth().fast(0.5))
+      .out();
+  </script>
+
+</body>
+</html>

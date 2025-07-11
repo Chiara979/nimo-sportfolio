@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+  <link rel="stylesheet" href="https://use.typekit.net/hks6dgm.css">
+  <title>Rewire Truth</title>
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      overflow: auto;
+      background: transparent;
+      color: white;
+      font-family: "pressio", sans-serif;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .wrapper {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px 20px 20px;
+    }
+
+    .title {
+      position: fixed;
+      top: 400px;
+      right: 120px;
+      transform: rotate(90deg) translateY(-100%);
+      transform-origin: top right;
+      color: white;
+      margin: 0;
+      font-size: 60px;
+      white-space: nowrap;
+      z-index: 10;
+    }
+
+    .content-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .image-wrapper {
+      width: 100%;
+      width: 1200px;
+      flex-shrink: 0;
+    }
+
+    .illustration2 {
+      display: block;
+      max-width: 1200px;
+      height: auto;
+      margin-top: 60px;
+      margin-bottom: 80px;
+      margin-left: -40px;
+      margin-right: auto;
+      border: 0.5px solid grey; /* Example: Add a solid blue border */
+    }
+
+    .instructions {
+      color: white;
+      max-width: 600px;
+      flex: 1;
+      margin-top: 0px;
+      margin-left: -40px;
+       background: rgba(0, 0, 0, 0.6);
+    }
+
+  /* Styling for the second image (final-image-2) */
+.final-image-2 {
+  display: block;
+  max-width: 500px; /* You can adjust this as needed */
+  width: 100%;
+  height: auto;
+  margin: -320px 50px 40px auto; /* Customize spacing */
+}
+
+/* Styling for the third image (final-image-3) */
+.final-image-3 {
+  display: block;
+  max-width: 600px; /* Different max width */
+  width: 100%;
+  height: auto;
+  margin: -250px auto 50px -40px; /* Different margins */
+  
+}
+
+
+    .bottom-text {
+      color: white;
+      max-width: 700px;
+      margin: 0 auto 100px auto;
+      padding: 20px;
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+      color: white;
+      margin: 0 0 15px 0;
+      font-size: 50px;
+    }
+
+    p {
+      color: white;
+      margin: 0 0 15px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      display: none;
+    }
+
+    .top-bar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      background: white;
+      border: 2px solid black;
+      height: 30px;
+      align-items: center;
+      padding: 0;
+      z-index: 200;
+    }
+
+    .top-bar a {
+      color: black;
+      text-decoration: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      background: white;
+    }
+
+    .top-bar a:hover {
+      background: rgb(201, 8, 8);
+      color: white;
+      border-color: rgb(201, 8, 8);
+    }
+
+    .top-bar a:first-child {
+      border-left: none;
+    }
+
+    .top-bar a:last-child {
+      border-right: none;
+    }
+
+  </style>
+</head>
+<body>
+<div class="top-bar">
+  <a href="nimo'sportfolio.html#intro">Intro</a>
+  <a href="nimo'sportfolio.html#works">Works</a>
+  <a href="nimo'sportfolio.html#about">About</a>
+  <a href="nimo'sportfolio.html#contact">Contact</a>
+</div>
+
+
+  <div class="wrapper">
+    <h1 class="title">Rewire Truth</h1>
+
+    <div class="image-wrapper">
+      <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/WhatsApp%20Image%202025-06-03%20at%2015.45.01.jpeg?v=1750778711970" class="illustration2" alt="Editor illustration" />
+    </div>
+
+    <div class="instructions">
+      <p>This experiment invites four participants into a live case study on how we collectively construct and
+sustain fabricated truths. Each computer in the setup forms part of a synchronized system using the
+Open Sound Control (OSC) protocol, enabling real-time communication across the network.
+Participants' responses are transmitted and recorded into a continuously evolving archive - a shared
+artifact of the group’s interaction — which is presented at the end of the experiment. The work
+explores how we, often unknowingly, participate in mutual manipulation and meaning-making
+within digital and social systems.
+During the installation to participate one of the four computers had to be approached and the on-screen instructions followed — the
+        experiment began once all four positions were occupied.</p>
+<p> In collaboration with Joe Loubser, Illia Salavei, Julia Tomaszewska and Borislav Chobanov</p>
+    </div>
+
+    <div class="image-wrapper">
+    <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/WhatsApp%20Image%202025-06-04%20at%2013.58.58.jpeg?v=1751209628717" alt="Second Image" class="final-image-2" />
+  </div>
+
+  <!-- Third Image (new class for the third image) -->
+  <div class="image-wrapper">
+    <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/Rewire_Truth_Installation_HackingP2.png?v=1750778641754" class="final-image-3" alt="Third Image" />
+  </div>
+    
+  <div class="bottom-text">
+    <p>
+      Part of the code
+    </p>
+    <p>import netP5.*;</p>
+    <p>import oscP5.*;</p>
+    <p>NetAddress sender_to_a;</p> 
+    <p>// computer a NetAddress sender_to_b;</p> 
+    <p>// computer b NetAddress sender_to_c; </p>
+    <p>// computer c NetAddress sender_to_d; </p>
+    <p>// computer d NetAddress sender_to_e; </p>
+    <p>// computer e  OscP5 oscP5;  void setup(){ </p> 
+    <p>oscP5 = new OscP5(this, 12000);    </p>
+    <p>// canvas   size(400,400); // size   background(0); // background color </p>  
+    <p>sender_to_a = new NetAddress("172.20.10.3", 12000); // assigning an address to my sending object </p>  
+    <p>sender_to_b = new NetAddress("172.20.10.2", 12000); // assigning an address to my sending object   </p>
+    <p>sender_to_c = new NetAddress("172.20.10.4", 12000); // assigning an address to my sending object   </p>
+    <p>sender_to_d = new NetAddress("172.20.10.5", 12000); // assigning an address to my sending object   </p>
+    <p>sender_to_e = new NetAddress("172.20.10.6", 12000); // assigning an address to my sending object  } </p>
+    <p>void draw(){}   </p>
+    <p>void keyPressed(){   </p>
+    <p>OscMessage myMessage = new OscMessage("/oldValue");  </p>
+    <p>if (key == 'y'){     // key y is pressed    </p>
+    <p>myMessage.add("yes");     </p>
+    <p>} else if (key == 'n'){     // key n is pressed </p>    
+    <p>myMessage.add("no");   }    // send to host     </p>
+    <p>myMessage.add('b'); </p>
+    <p>oscP5.send(myMessage, sender_to_a);  } </p>
+  </div>
+
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <script>
+    const hydra = new Hydra({ detectAudio: false, canvas: document.createElement('canvas') });
+    document.body.appendChild(hydra.canvas);
+
+    voronoi(350, 0.15)
+      .modulateScale(osc(8).rotate(Math.sin(time)), 0.5)
+      .thresh(0.8)
+      .modulateRotate(osc(7), 0.4)
+      .thresh(0.7)
+      .diff(src(o0).scale(1.8))
+      .modulateScale(osc(2).modulateRotate(o0, 0.74))
+      .diff(src(o0).rotate([-.012, .01, -.002, 0]).scrollY(0, [-1/199800, 0].fast(0.7)))
+      .brightness([-.02, -.17].smooth().fast(0.5))
+      .out();
+  </script>
+
+</body>
+</html>

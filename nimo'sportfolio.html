@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://use.typekit.net/hks6dgm.css">
+  <title>Nimo E.'s Portfolio</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      color: white;
+      font-family: Poppins, sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      position: relative;
+    }
+
+    canvas.hydra-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .top-bar {
+      position: fixed;
+      top: 10px;
+      left: 20px;
+      display: flex;
+      background: white;
+      border: 2px solid black;
+      height: 30px;
+      align-items: center;
+      z-index: 200;
+    }
+
+    .top-bar a {
+      color: black;
+      text-decoration: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      transition: all 0.3s ease;
+      font-size: 16px;
+      background: white;
+    }
+
+    .top-bar a:hover {
+      background: rgb(201, 8, 8);
+      color: white;
+      border-color: rgb(201, 8, 8);
+    }
+
+    .top-bar a:first-child {
+      border-left: none;
+    }
+
+    .top-bar a:last-child {
+      border-right: none;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  .section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+}
+    
+.title {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-size: clamp(100px, 12vw, 240px);
+  text-align: right;
+  font-family: "pressio", sans-serif;
+  white-space: nowrap;
+  line-height: 1;
+}
+    
+#top {
+  position: relative;
+}
+
+    .content-row {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+    }
+
+    .left-aligned-section {
+      text-align: left;
+      color: white;
+      font-family: "pressio", sans-serif;
+      margin: 0;
+    }
+
+    .left-aligned-section hr {
+      border: none;
+      border-top: 2px solid white;
+      margin: 5px 0;
+    }
+
+    .section-link {
+      display: block;
+      font-size: 52px;
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      transition: font-family 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .section-link:hover {
+      font-family: "lucida-console-w1g", sans-serif;
+      color: rgb(201, 8, 8);
+    }
+
+   .image-wrapper {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+  .top-right-text {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "pressio", sans-serif;
+  text-align: right;
+  max-width: 300px;
+  z-index: 2;
+}
+
+
+    .instructions {
+      color: white;
+      max-width: 600px;
+      margin: 50px auto;
+      text-align: center;
+      font-family: "pressio", sans-serif;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      width: 100%;
+      height: 80px;
+      position: relative;
+      margin-top: 240px;
+    }
+
+    .marquee-content {
+      display: flex;
+      position: absolute;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    .marquee-content span {
+      white-space: nowrap;
+      font-size: 60px;
+      color: rgb(201, 8, 8);
+      text-transform: uppercase;
+      font-family: "lucida-console-w1g", sans-serif;
+      margin-right: 60px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    h2, p {
+      margin: 0 0 15px 0;
+    }
+
+    h2 {
+      font-size: 50px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    footer {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 80px;
+        text-align: center;
+        white-space: normal;
+      }
+
+      .top-bar {
+        flex-wrap: wrap;
+        height: auto;
+      }
+
+      .top-bar a {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .top-right-text {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas class="hydra-canvas"></canvas>
+
+  <div class="top-bar">
+    <a href="#top">Intro</a>
+    <a href="#works">Works</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="section" id="top">
+  <h1 class="title">Nimo's <br>Portfolio</h1>
+</div>
+
+
+ <div class="section" id="works">
+  <div class="left-aligned-section">
+    <hr />
+    <a href="epidermitecture.html" class="section-link">Epidermitecture</a>
+    <hr />
+    <a href="bacterial.html" class="section-link">Bacterial</a>
+    <hr />
+    <a href="destination undefined.html" class="section-link">Destination Undefined</a>
+    <hr />
+    <a href="rewire truth.html" class="section-link">Rewire Truth</a>
+    <hr />
+    <a href="subversive toolbox.html" class="section-link">Subversive toolbox</a>
+    <hr />
+    <a href="filandones.html" class="section-link">Filandones</a>
+    <hr />
+    <a href="mossmirror.html" class="section-link">Moss mirror</a>
+    <hr />
+    <a href="practice.html" class="section-link">Practice</a>
+    <hr />
+  </div>
+</div>
+
+
+    <div class="section" id="about">
+  <div class="image-container">
+    <div class="image-wrapper">
+    <img src="https://cdn.glitch.global/46b5f655-455f-47c6-9d48-da19107a3dde/me_introduction.jpeg?v=1750856467458" class="illustration" alt="Second Image" />
+    <div class="top-right-text">
+      <p>
+        Hi! I’m Nimo. I’m a multimedia artist and designer.<br>I research topics thoroughly with different methodologies and present my message through artistic interventions.<br>I always work with and for others.
+      </p>
+      <p>
+        I mainly do installations, ranging from sculpture to code writing. From time to time I also do videos, print, and pretty much anything else.
+      </p>
+    </div>
+  </div>
+</div>
+  </div>
+
+
+ <div class="section" id="contact">
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <span>Contact me - Contact me - Contact me - Contact me - Contact me - Contact me -</span>
+      <span>Contact me - Contact me - Contact me - Contact me - Contact me - Contact me -</span>
+    </div>
+  </div>
+  <div class="instructions">
+    <p>Are you looking to collaborate or for some artworks?</p>
+    <p>Contact me at s_ncollective@protonmail.com</p>
+  </div>
+</div>
+
+  <script src="https://unpkg.com/hydra-synth"></script>
+  <script>
+    const hydraCanvas = document.querySelector('.hydra-canvas');
+    const hydra = new Hydra({ detectAudio: false, canvas: hydraCanvas });
+
+    voronoi(350, 0.15)
+      .modulateScale(osc(8).rotate(Math.sin(time)), 0.5)
+      .thresh(0.8)
+      .modulateRotate(osc(7), 0.4)
+      .thresh(0.7)
+      .diff(src(o0).scale(1.8))
+      .modulateScale(osc(2).modulateRotate(o0, 0.74))
+      .diff(src(o0).rotate([-.012, .01, -.002, 0]).scrollY(0, [-1 / 199800, 0].fast(0.7)))
+      .brightness([-.02, -.17].smooth().fast(0.5))
+      .out();
+  </script>
+</body>
+</html>
