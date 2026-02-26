@@ -50,7 +50,8 @@
       z-index: 10;
     }
 
-  .content-row {
+/* Row containing text and video */
+.content-row {
   display: flex;
   align-items: flex-start;   /* top-align text and video */
   gap: 30px;                 /* space between text and video */
@@ -58,16 +59,20 @@
   margin-top: 50px;
 }
 
+/* Text block */
 .instructions {
   flex: 1 1 400px;           /* text can shrink/grow, min 400px */
   background: rgba(0,0,0,0.6);
   padding: 20px;
   box-sizing: border-box;
+  margin-top: 20px;          /* move text slightly down */
 }
 
+/* Video block */
 .video-wrapper {
   flex: 1 1 500px;           /* video can shrink/grow, min 500px */
   aspect-ratio: 16/9;        /* keeps proper video ratio */
+  margin-top: 60px;          /* move video down */
 }
 
 .video-wrapper iframe {
@@ -76,14 +81,21 @@
   border: none;
 }
 
-/* Remove vertical auto margins from images inside flex row */
-.image-wrapper img,
+/* Top image */
+.image-wrapper img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 40px;          /* move top image down */
+}
+
+/* Other images (like bottom illustration) */
 .illustration2,
 .final-image {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0;  /* remove vertical auto centering */
+  margin-top: 40px;          /* space below text before bottom image */
 }
 
    .final-image {
