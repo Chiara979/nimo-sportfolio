@@ -50,50 +50,40 @@
       z-index: 10;
     }
 
-   .content-row {
+  .content-row {
   display: flex;
-  align-items: flex-start;  /* top-align text and video */
-  gap: 30px;                /* space between text and video */
-  flex-wrap: wrap; 
- margin-top: 50px;
-}
-    
-.image-wrapper img {
-  display: block;
-  max-width: 100%;   
-  height: auto;
-  margin: 70px auto 80px auto; 
-  position: relative;
-  left: 0;           
+  align-items: flex-start;   /* top-align text and video */
+  gap: 30px;                 /* space between text and video */
+  flex-wrap: wrap;           /* allow wrapping on small screens */
+  margin-top: 50px;
 }
 
- .illustration2,
-.final-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 80px auto;  /* centers properly */
-}
-
-
-    .instructions {
-  flex: 1 1 450px;          /* more space for text */
+.instructions {
+  flex: 1 1 400px;           /* text can shrink/grow, min 400px */
   background: rgba(0,0,0,0.6);
   padding: 20px;
   box-sizing: border-box;
 }
 
 .video-wrapper {
-  flex: 1.8 1 750px;         /* slightly smaller than text to balance */
-  aspect-ratio: 16/9;
-  margin-top: 60px;   
-}
+  flex: 1 1 500px;           /* video can shrink/grow, min 500px */
+  aspect-ratio: 16/9;        /* keeps proper video ratio */
 }
 
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* Remove vertical auto margins from images inside flex row */
+.image-wrapper img,
+.illustration2,
+.final-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;  /* remove vertical auto centering */
 }
 
    .final-image {
