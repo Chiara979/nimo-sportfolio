@@ -50,11 +50,12 @@
       z-index: 10;
     }
 
-    .content-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 30px;
-    }
+   .content-row {
+  display: flex;
+  align-items: flex-start;  /* top-align text and video */
+  gap: 30px;                /* space between text and video */
+  flex-wrap: wrap;          /* allows stacking on small screens */
+}
     
  /* Make sure the wrapper can accommodate the image */
 .image-wrapper {
@@ -84,20 +85,17 @@
 
 
     .instructions {
-      color: white;
-      max-width: 600px;
-      flex: 1;
-      margin-top: 150px;
-      margin-left: -40px;
-      background: rgba(0, 0, 0, 0.6);
-    }
+  flex: 1 1 450px;          /* more space for text */
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;                 /* remove weird negative margin */
+}
 
 .video-wrapper {
-  position: relative;      
-  width: 100%;             
-  max-width: 600px;        
-  aspect-ratio: 16 / 9;
-  margin: 40px auto 0;      
+  flex: 1.2 1 500px;         /* slightly smaller than text to balance */
+  aspect-ratio: 16/9;
+  margin: 0;                 /* remove top auto margin */
 }
 
 .video-wrapper iframe {
@@ -205,6 +203,7 @@
       <img src="bench_carl_screenshot.png" alt="Editor illustration" />
     </div>
 
+    <div class="content-row">
     <div class="instructions">
       <p>As foreigners to the Netherlands we noticed, researched and discussed our findings in regards to the hostility of public spaces, that seemed to be characterized and visualized by hostile architecture, as well as our individual and societal role in this.. While reflecting on this, we came to the conclusion that this uninviting environment was a reflection of the society itself within the city of Rotterdam.</p>
 <p>We found that this social set up lacked the vital presence of empathy towards some of the most vulnerable people within our society: the homeless.</p>
@@ -221,7 +220,8 @@
     allowfullscreen>
   </iframe>
 </div>
-
+</div>
+    
   <div class="image-wrapper">
     <img src="bed_screenshot.png" class="final-image" alt="Final illustration" />
   </div>
