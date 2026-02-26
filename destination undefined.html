@@ -67,23 +67,12 @@
   left: 0;           
 }
 
-.image-wrapper img {
-  position: relative; /* Allows relative positioning within the wrapper */
-  width: 1200px; /* Force the image to 1200px wide */
-  height: auto; /* Maintain aspect ratio */
-  top: 70px; /* Moves the image downward */
-  left: -200px; /* Moves the image to the left */
-  margin-bottom: 80px; /* Adjust this as needed */
-}
-
-    .illustration2,
+ .illustration2,
 .final-image {
   display: block;
-  max-width: 100%;     
-  width: auto;
+  max-width: 100%;
   height: auto;
-  margin: 0 0 80px 400px;
-  transform: translateX (400px)
+  margin: 80px auto;  /* centers properly */
 }
 
 
@@ -97,6 +86,8 @@
 .video-wrapper {
   flex: 1.2 1 500px;         /* slightly smaller than text to balance */
   aspect-ratio: 16/9;
+  margin-top: 60px;   
+}
 }
 
 .video-wrapper iframe {
