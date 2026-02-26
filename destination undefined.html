@@ -93,12 +93,21 @@
       background: rgba(0, 0, 0, 0.6);
     }
 
-    .video-wrapper {
-      max-width: 600px;
-      margin-top: -460px;
-      margin-left: 650px;
-      margin-right: 50px;
-    }
+ .video-wrapper {
+  position: relative;
+  max-width: 600px;
+  margin-top: -460px;
+  margin-left: 650px;
+  margin-right: 50px;
+
+  aspect-ratio: 16 / 9;   /* keeps video proportion */
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
     .final-image {
       display: block;
@@ -203,13 +212,15 @@
 <p> In collaboration with Joe Loubser </p>
     </div>
 
-    <div class="video-wrapper">
-      <video width="500" controls>
-        <source src="https://cdn.glitch.me/46b5f655-455f-47c6-9d48-da19107a3dde/Destination_Undefined.mp4?v=1751208691432" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
+  <div class="video-wrapper">
+  <iframe 
+    src="https://www.youtube.com/embed/Z6wJNGHp28w"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
 
   <div class="image-wrapper">
     <img src="bed_screenshot.png" class="final-image" alt="Final illustration" />
