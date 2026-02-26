@@ -54,14 +54,17 @@
   display: flex;
   align-items: flex-start;  /* top-align text and video */
   gap: 30px;                /* space between text and video */
-  flex-wrap: wrap;          /* allows stacking on small screens */
+  flex-wrap: wrap; 
+ margin-top: 50px;
 }
     
- /* Make sure the wrapper can accommodate the image */
-.image-wrapper {
-  width: 100%; /* Ensure it takes up the full width */
-  position: relative; /* Makes sure positioning inside the wrapper works */
-  max-width: 1200px; /* Constrains the max width */
+.image-wrapper img {
+  display: block;
+  max-width: 100%;   
+  height: auto;
+  margin: 70px auto 80px auto; 
+  position: relative;
+  left: 0;           
 }
 
 .image-wrapper img {
@@ -89,13 +92,11 @@
   background: rgba(0,0,0,0.6);
   padding: 20px;
   box-sizing: border-box;
-  margin: 0;                 /* remove weird negative margin */
 }
 
 .video-wrapper {
   flex: 1.2 1 500px;         /* slightly smaller than text to balance */
   aspect-ratio: 16/9;
-  margin: 0;                 /* remove top auto margin */
 }
 
 .video-wrapper iframe {
@@ -104,16 +105,13 @@
   border: none;
 }
 
-    .final-image {
-      display: block;
-      max-width: 1200px;
-      width: 100%;
-      height: auto;
-     margin-top: 300px; 
-  margin-bottom: 80px;
-  margin-left: auto;
-  margin-right: 720px;
-    }
+   .final-image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 80px auto 80px auto;  /* top/bottom spacing + center horizontally */
+}
 
     .bottom-text {
       color: white;
