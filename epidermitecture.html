@@ -72,20 +72,24 @@
       margin-right: auto;
     }
 
-    .instructions {
-      color: white;
-      max-width: 600px;
-      flex: 1;
-      margin-top: 0px;
-      margin-left: -40px;
-      background: rgba(0, 0, 0, 0.6);
-    }
+ .content-row {
+  display: flex;           /* aligns children horizontally */
+  align-items: flex-start; /* aligns top edges */
+  gap: 30px;               /* space between text and video */
+  flex-wrap: wrap;         /* allows stacking on small screens */
+}
+
+.instructions {
+  flex: 1 1 400px;         /* grow/shrink, min width 400px */
+  background: rgba(0,0,0,0.6);
+  padding: 20px;
+  box-sizing: border-box;
+}
 
 .video-wrapper {
-  position: relative;
-  width: 600px;       
+  flex: 0 0 600px;         /* fixed width */
   aspect-ratio: 16 / 9;
-  margin: 40px auto;
+  margin: 0;               /* remove centering */
 }
 
 .video-wrapper iframe {
@@ -194,6 +198,7 @@
       <img src="epidermitecture_installation%20image_2.jpeg" class="illustration2" alt="Editor illustration" />
     </div>
 
+    <div class="content-row">
     <div class="instructions">
       <p>We all have seen biopatina, yet have you ever noticed it?</p>
       <p>In this work, we took on a different perspective by switching to a non human point of view. Looking from microscopic to systematic, we talked about coexistence amongst seemingly unrelated entities and how they come together to reimagine the surrounding environment. Many people may view them as insignificant stains on houses and other surfaces. However, the biopatina is incredibly valuable and exceptional. Biopatina is the formation of a unique complex symbiotic relationship of multiple organisms on human made surfaces. The biopatina is not only beneficial towards each other, but also towards the surface it lives on, helping in preserving it. </p>
@@ -210,7 +215,8 @@
     allowfullscreen>
   </iframe>
 </div>
-
+</div>
+    
   <div class="image-wrapper">
     <img src="experimentation%20four.png" class="final-image" alt="Final illustration" />
   </div>
